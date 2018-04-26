@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Productos Existentes</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+	<center>
+		<nav class="navbar navbar-info bg-info justify-content-between">
+  <h1><span class="navbar-text">TEKNOLOGI BUTIKK, Denke groß</span></h1>
+  <a href="wichitroco/crearUsuario.html">
+  <span class="navbar-text"><a href="../../Public/wichitroco/menu.html"><button class="btn btn-outline-warning" type="button">regresar</button></a>
+    </span>
+</a>
+</nav>
+<BR> 
+<BR>
+	<form name="existentes" action="../../src/control/controlExistentes.php" method="POST">
+		<H1>PRODUCTOS EXISTENTES</H1>
+		<fieldset>
+			<BR> 
+			<BR>
+			<table>
+				<tr>
+					<th align="left">Codigo</th>
+					<td><input type="text" name="codigo" id="codigo" class="form-control" placeholder="Escriba el codigo"></td>
+					<td><input type="submit" name="codigo1" value="Busqueda Por Codigo" class="btn btn-info"></td>
+				</tr>
+				<tr>
+					<th align="left">Producto</th>
+					<td><input type="text" name="producto" id="producto" class="form-control" placeholder="Aqui el producto!"></td>
+					<td><input type="submit" name="producto1" value="Busqueda Por Producto" class="btn btn-info"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="Todo" value="Ver todo" class="btn btn-info">
+						<input type="reset" name="reset" value="Limpiar" class="btn btn-outline-danger"></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	</center>
+</body>
+
+</html>

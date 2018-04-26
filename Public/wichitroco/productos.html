@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro de Productos</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+	<center>
+		<nav class="navbar navbar-info bg-info justify-content-between">
+  <h1><span class="navbar-text">TEKNOLOGI BUTIKK, Denke groß</span></h1>
+  <a href="wichitroco/crearUsuario.html">
+  <span class="navbar-text"><a href="../../Public/wichitroco/menu.html"><button class="btn btn-outline-warning" type="button">regresar</button></a>
+    </span>
+</a>
+</nav>
+<br>
+<br>
+	<form name="controlProducto" action="../../src/control/controlProducto.php" method="POST">
+		<H1>REGISTRO DE PRODUCTOS</H1>
+		<br>
+		<img target="_blank" src="../../Public/imagen/productos.png" border="1" alt="no pudo cargar" width="128" height="128">
+		<br>
+		<br>
+		<fieldset>
+			<table>
+					
+				<tr>
+					<th align="left">Codigo</th>
+					<td><input type="text" name="codigo" id="codigo" class="form-control" placeholder="Escriba el codigo del producto"></td>
+				</tr>
+				<tr>
+					<th align="left">Producto</th>
+					<td><input type="text" name="producto" id="producto" class="form-control" placeholder="Escriba el producto"></td>
+				</tr>
+
+
+				<tr>
+					<th align="left">descripcion</th>
+					<td><input type="text" name="descripcion" id="descripcion" class="form-control" placeholder="describa el producto"></td>
+				</tr>
+
+				<tr>
+					<th align="left">Cantidad</th>
+					<td><input type="txt" name="cantidad" id="cantidad" class="form-control" placeholder="Cantidad de producto"></td>
+				</tr>
+			
+				<tr>
+					<th align="left">Valor</th>
+					<td><input type="number" name="valorTotal" id="valorTotal" class="form-control" placeholder="Valor total"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="Guardar" value="Guardar" class="btn btn-info">
+						<input type="submit" name="Actualizar" value="Actualizar" class="btn btn-info">
+						<input type="submit" name="Borrar" value="Borrar" class="btn btn-info"></td>
+					<td><input type="reset" name="Limpiar" value="Limpiar" class="btn btn-outline-danger"></td>
+				</tr>
+			</table>	
+		</fieldset>
+	</form>
+	</center>
+</body>
+
+</html>
